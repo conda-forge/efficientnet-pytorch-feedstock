@@ -1,5 +1,5 @@
 {% set name = "efficientnet-pytorch" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/efficientnet_pytorch-{{ version }}.tar.gz
-  sha256: 6667459336893e9bf6367de3788ba449fed97f65da3b6782bf2204b6273a319f
+  sha256: 7c0093428fc6a4137465de0f8101332a31c98072200ac8e14a6324cedad3b109
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
-  summary: "EfficientNet implemented in PyTorch."
+  summary: EfficientNet implemented in PyTorch.
   dev_url: https://github.com/lukemelas/efficientnet_pytorch
 
 extra:
