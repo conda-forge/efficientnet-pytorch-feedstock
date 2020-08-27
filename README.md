@@ -5,7 +5,7 @@ Home: https://github.com/lukemelas/efficientnet_pytorch
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: EfficientNet implemented in PyTorch.
 
