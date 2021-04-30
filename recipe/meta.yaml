@@ -19,8 +19,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - python
-    - pytorch >=3.6
+    - python >=3.6
+    - pytorch
 
 test:
   imports:
