@@ -6,23 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/efficientnet_pytorch-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/efficientnet_pytorch-{{ version }}.tar.gz
   sha256: 00b9b261effce59d2d47aae2ad238c29a2a65175470f41ada7ecac439b7c1ee1
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pytorch
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - efficientnet_pytorch
 
